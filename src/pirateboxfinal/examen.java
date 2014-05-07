@@ -1615,8 +1615,8 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
 
     @Override
     public void mouseReleased(MouseEvent e) {
-        Rectangle play = new Rectangle(337, 583, 198, 69);
-        Rectangle how = new Rectangle(576, 583, 246, 69);
+        Rectangle play = new Rectangle(337, 624, 199, 70);
+        Rectangle how = new Rectangle(576, 624, 246, 70);
         x1 = e.getX();
         y1 = e.getY();
         if (play.contains(x1, y1) && !howt) {
