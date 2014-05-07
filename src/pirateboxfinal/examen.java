@@ -77,6 +77,7 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
     private boolean start;
     private boolean howt;
     private boolean back;
+    private boolean restart;
 
     private double tiemporeal;
     private SoundClip shot;
@@ -162,7 +163,7 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
         tbrbalaviva3 = false;
         tbrbalaviva4 = false;
         tbrbalaviva5 = false;
-
+        pausa = false;
         tbrbala = false;
         malobr = false;
         malo2br = false;
@@ -193,6 +194,16 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
         start = false;
         howt = false;
         back = false;
+        restart = false;
+        muerto = false;
+        nootravez = false;
+        bal = false;
+        balaviva = false;
+        movbala = false;
+        up=down=left=right=false;
+        espaciovida = false;
+        ammopalma = false;
+        mov = false;
 
         int posX = getWidth() / 2;    // posicion en x es un cuarto del applet
         int posY = getHeight() / 2;    // posicion en y es un cuarto del applet  
@@ -363,9 +374,21 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
     public void Malo3() {
         Boss = new boss3(600, 30, 1);
     }
+    
+    public void Restart(){
+           cancionF.stop();
+           tonybr=null;
+           Boss = null;
+           malo = null;
+           vida = 5;
+           balathermo=balathermo1=balathermo2=balathermo3=balathermo4=balathermo5= null;
+           init();
+          
+        }
 
     public void run() {
-        while (vida > 0) {
+        //while (vida > 0) {
+        while (true) {
             if (start && !pausa) {
                 actualiza();
                 checaColision();
@@ -496,6 +519,13 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
 
         if (!pausa) {
             tiemporeal += .020;
+        }
+        
+        if(restart ){
+           cancionF.stop();
+           tonybr=null;
+           init();
+//          
         }
 
         //Determina el tiempo que ha transcurrido desde que el Applet inicio su ejecución
@@ -1492,9 +1522,14 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
             pausa = !pausa;
         }
 
-        if (e.getKeyCode() == KeyEvent.VK_R) //Presiono flecha arriba
+        /*if (e.getKeyCode() == KeyEvent.VK_R) //Presiono flecha arriba
         {
             init();
+        }*/
+        
+        if (e.getKeyCode() == KeyEvent.VK_R) //Presiono r para reiniciar
+        {
+            Restart();
         }
 
         if (e.getKeyCode() == KeyEvent.VK_SPACE) {
