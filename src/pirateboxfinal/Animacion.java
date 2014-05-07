@@ -38,6 +38,8 @@ public class Animacion{
 	/**
 		Añade una cuadro a la animación con la duración
 		indicada (tiempo que se muestra la imagen).
+     * @param imagen
+     * @param duracion
 	*/	
 	public synchronized void sumaCuadro(Image imagen, long duracion){
 		duracionTotal += duracion;
@@ -58,6 +60,7 @@ public class Animacion{
 	/**
 		Actualiza la imagen (cuadro) actual de la animación,
 		si es necesario.
+     * @param tiempoTranscurrido
 	*/
 	public synchronized void actualiza(long tiempoTranscurrido){
 		if (cuadros.size() > 1){
@@ -77,6 +80,7 @@ public class Animacion{
 	/**
 		Captura la imagen actual de la animación. Regeresa null
 		si la animación no tiene imágenes.
+     * @return 
 	*/
 	public synchronized Image getImagen(){
 		if (cuadros.size() == 0){
@@ -99,29 +103,53 @@ public class Animacion{
 		Image imagen;
 		long tiempoFinal;
 		
-		public cuadroDeAnimacion(){
+            /**
+             *
+             */
+            public cuadroDeAnimacion(){
 			this.imagen = null;
 			this.tiempoFinal = 0;
 		}
 		
-		public cuadroDeAnimacion(Image imagen, long tiempoFinal){
+            /**
+             *
+             * @param imagen
+             * @param tiempoFinal
+             */
+            public cuadroDeAnimacion(Image imagen, long tiempoFinal){
 			this.imagen = imagen;
 			this.tiempoFinal = tiempoFinal;
 		}
 		
-		public Image getImagen(){
+            /**
+             *
+             * @return
+             */
+            public Image getImagen(){
 			return imagen;
 		}
 		
-		public long getTiempoFinal(){
+            /**
+             *
+             * @return
+             */
+            public long getTiempoFinal(){
 			return tiempoFinal;
 		}
 		
-		public void setImagen (Image imagen){
+            /**
+             *
+             * @param imagen
+             */
+            public void setImagen (Image imagen){
 			this.imagen = imagen;
 		}
 		
-		public void setTiempoFinal(long tiempoFinal){
+            /**
+             *
+             * @param tiempoFinal
+             */
+            public void setTiempoFinal(long tiempoFinal){
 			this.tiempoFinal = tiempoFinal;
 		}
 	}

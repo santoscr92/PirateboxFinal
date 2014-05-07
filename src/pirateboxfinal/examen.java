@@ -1380,6 +1380,7 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
     
     /**
      * Metodo paint
+     * @param g
      */
     public void paint(Graphics g) {
         // Inicializan el DoubleBuffer
@@ -1402,6 +1403,7 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
     
     /**
      * Metodo paint1 en el cual se pinta todo lo del juego
+     * @param g
      */
     public void paint1(Graphics g) {
         if (vida > 0) {
@@ -1552,6 +1554,10 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
         }
     }
 
+    /**
+     *
+     * @param e
+     */
     public void keyPressed(KeyEvent e) {
 
         int x = jack.getPosX();
@@ -1635,24 +1641,44 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
 
     }
 
+    /**
+     *
+     * @param e
+     */
     @Override
     public void mouseClicked(MouseEvent e) {
 
     }
 
+    /**
+     *
+     * @param e
+     */
     @Override
     public void mouseEntered(MouseEvent e) {
     }
 
+    /**
+     *
+     * @param e
+     */
     @Override
     public void mouseExited(MouseEvent e) {
     }
 
+    /**
+     *
+     * @param e
+     */
     @Override
     public void mousePressed(MouseEvent e) {
 
     }
 
+    /**
+     *
+     * @param e
+     */
     @Override
     public void mouseReleased(MouseEvent e) {
         Rectangle play = new Rectangle(337, 624, 199, 70);
@@ -1676,6 +1702,10 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
 
     }
 
+    /**
+     *
+     * @param e
+     */
     @Override
     public void mouseMoved(MouseEvent e) {
     }

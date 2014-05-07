@@ -11,9 +11,7 @@ import java.awt.Toolkit;
 
          /**
 	 * Metodo constructor que hereda los atributos de la clase <code>Base</code>.
-	 * @param posX es la <code>posiscion en x</code> del objeto bueno.
 	 * @param posY es el <code>posiscion en y</code> del objeto bueno.
-	 * @param image es la <code>imagen</code> del objeto bueno.
 	 */
 public class Bueno extends Base{
 

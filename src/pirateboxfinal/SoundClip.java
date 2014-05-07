@@ -25,6 +25,9 @@ public class SoundClip {
     private int repeat = 0;
     private String filename = "";
 
+    /**
+     *
+     */
     public SoundClip() {
 
         try {
@@ -36,42 +39,74 @@ public class SoundClip {
         }
     }
 
+    /**
+     *
+     * @param filename
+     */
     public SoundClip(String filename) {
 
         this();
         load(filename);
     }
 
+    /**
+     *
+     * @param looping
+     */
     public void setLooping(boolean looping) {
 
         this.looping = looping;
     }
 
+    /**
+     *
+     * @param repeat
+     */
     public void setRepeat(int repeat) {
 
         this.repeat = repeat;
     }
 
+    /**
+     *
+     * @param filename
+     */
     public void setFilename(String filename) {
 
         this.filename = filename;
     }
 
+    /**
+     *
+     * @return
+     */
     public Clip getClip() {
 
         return clip;
     }
 
+    /**
+     *
+     * @return
+     */
     public boolean getLooping() {
 
         return looping;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getRepeat() {
 
         return repeat;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getFilename() {
 
         return filename;
@@ -90,11 +125,20 @@ public class SoundClip {
         return url;
     }
 
+    /**
+     *
+     * @return
+     */
     public boolean isLoaded() {
 
         return (boolean) (sample != null);
     }
 
+    /**
+     *
+     * @param audiofile
+     * @return
+     */
     public boolean load(String audiofile) {
 
         try {
@@ -118,6 +162,9 @@ public class SoundClip {
         }
     }
 
+    /**
+     *
+     */
     public void play() {
 
         if (!isLoaded()) {
@@ -133,6 +180,9 @@ public class SoundClip {
         }
     }
 
+    /**
+     *
+     */
     public void stop() {
 
         clip.stop();

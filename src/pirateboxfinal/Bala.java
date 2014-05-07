@@ -11,8 +11,6 @@ import java.awt.Toolkit;
 
          /**
 	 * Metodo constructor que hereda los atributos de la clase <code>Base</code>.
-	 * @param posX es la <code>posiscion en x</code> del objeto bala.
-	 * @param posY es el <code>posiscion en y</code> del objeto bala.
 	 * @param image es la <code>imagen</code> del objeto bala.
          * @param flechitas es la <code>image</code> del objeto bala.
 	 */ 
@@ -59,7 +57,11 @@ public class Bala extends Base {
              return conteo;
          }
          
-         public static void setConteo(int a)
+    /**
+     *
+     * @param a
+     */
+    public static void setConteo(int a)
          {
              conteo = a;
          }

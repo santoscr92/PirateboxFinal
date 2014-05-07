@@ -11,10 +11,7 @@ import java.awt.Toolkit;
 
          /**
 	 * Metodo constructor que hereda los atributos de la clase <code>Base</code>.
-	 * @param posX es la <code>posiscion en x</code> del objeto ammo.
-	 * @param posY es el <code>posiscion en y</code> del objeto ammo.
 	 * @param image es la <code>imagen</code> del objeto ammo.
-         * @param flechitas es la <code>image</code> del objeto ammo.
 	 */
 public class Ammo extends Base {
 

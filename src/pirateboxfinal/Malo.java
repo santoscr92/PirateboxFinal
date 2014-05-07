@@ -10,22 +10,25 @@ import java.awt.Toolkit;
 
          /**
 	 * Metodo constructor que hereda los atributos de la clase <code>Base</code>.
-	 * @param posX es la <code>posiscion en x</code> del objeto malo.
-	 * @param posY es el <code>posiscion en y</code> del objeto malo.
-	 * @param image es la <code>imagen</code> del objeto malo.
-         * @param flechitas es la <code>image</code> del objeto malo.
 	 */
 public class Malo extends Base {
 
          private static int conteo = 0;
          
-         
-         public static int getConteo()
+    /**
+     *
+     * @return
+     */
+    public static int getConteo()
          {
              return conteo;
          }
          
-         public static void setConteo(int a)
+    /**
+     *
+     * @param a
+     */
+    public static void setConteo(int a)
          {
              conteo = a;
          }

@@ -9,6 +9,10 @@ import javax.swing.ImageIcon;
 import java.awt.Image;
 import java.awt.Rectangle;
 
+/**
+ *
+ * @author Santoscr92
+ */
 public class Base {
 	
 	private int posX;    //posicion en x.       
@@ -17,14 +21,16 @@ public class Base {
 	private ImageIcon icono;    //icono.
         boolean move; 
         
-        protected Animacion anim;
+    /**
+     *
+     */
+    protected Animacion anim;
 	
 	/**
 	 * Metodo constructor usado para crear el objeto
 	 * @param posX es la <code>posicion en x</code> del objeto.
 	 * @param posY es la <code>posicion en y</code> del objeto.
          * @param flechitas es la <code>caso flechas</code>del objeto.
-	 * @param image es la <code>imagen</code> del objeto.
 	 */
 	public Base(int posX, int posY, int flechitas) {
 		this.posX=posX;
@@ -145,7 +151,7 @@ public class Base {
 
     /**
      *
-     * @param obj
+     * @param tiempo
      * @return
      */
         

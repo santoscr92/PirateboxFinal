@@ -9,6 +9,10 @@ package pirateboxfinal;
 import java.awt.Image;
 import java.awt.Toolkit;
 
+/**
+ *
+ * @author Santoscr92
+ */
 public class Malo2 extends Base {
 
 	/**
@@ -21,13 +25,20 @@ public class Malo2 extends Base {
     
          private static int conteo = 0;
          
-         
-         public static int getConteo()
+    /**
+     *
+     * @return
+     */
+    public static int getConteo()
          {
              return conteo;
          }
          
-         public static void setConteo(int a)
+    /**
+     *
+     * @param a
+     */
+    public static void setConteo(int a)
          {
              conteo = a;
          }

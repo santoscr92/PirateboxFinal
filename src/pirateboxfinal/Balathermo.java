@@ -60,12 +60,20 @@ public class Balathermo extends Base {
              return velocidad;  
          }
          
-         public static int getConteo()
+    /**
+     *
+     * @return
+     */
+    public static int getConteo()
          {
              return conteo;
          }
          
-         public static void setConteo(int a)
+    /**
+     *
+     * @param a
+     */
+    public static void setConteo(int a)
          {
              conteo = a;
          }

@@ -8,6 +8,10 @@ package pirateboxfinal;
 import java.awt.Image;
 import java.awt.Toolkit;
 
+/**
+ *
+ * @author Santoscr92
+ */
 public class TBR extends Base {
 
 	/**
@@ -21,29 +25,52 @@ public class TBR extends Base {
          private static int conteo = 0;
          private int vida = 50,velocidad = 5;
          
-         
-         public void setVelocidad(int vel){
+    /**
+     *
+     * @param vel
+     */
+    public void setVelocidad(int vel){
              velocidad = vel;
          }
          
-         public int getVelocidad(){
+    /**
+     *
+     * @return
+     */
+    public int getVelocidad(){
              return velocidad;  
          }
          
-         public void setVida(int v){
+    /**
+     *
+     * @param v
+     */
+    public void setVida(int v){
              vida = v;
          }
          
-         public int getVida(){
+    /**
+     *
+     * @return
+     */
+    public int getVida(){
              return vida;
          }
          
-         public static int getConteo()
+    /**
+     *
+     * @return
+     */
+    public static int getConteo()
          {
              return conteo;
          }
          
-         public static void setConteo(int a)
+    /**
+     *
+     * @param a
+     */
+    public static void setConteo(int a)
          {
              conteo = a;
          }
@@ -67,8 +94,13 @@ public class TBR extends Base {
              return llego;
          }
          
-         
-	public TBR(int posX,int posY,int flechitas){
+    /**
+     *
+     * @param posX
+     * @param posY
+     * @param flechitas
+     */
+    public TBR(int posX,int posY,int flechitas){
 		
                 super(posX,posY,flechitas);	
                 

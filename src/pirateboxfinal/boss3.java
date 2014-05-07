@@ -9,6 +9,10 @@ package pirateboxfinal;
 import java.awt.Image;
 import java.awt.Toolkit;
 
+/**
+ *
+ * @author Santoscr92
+ */
 public class boss3 extends Base {
 
 	/**
@@ -21,13 +25,20 @@ public class boss3 extends Base {
     
          private static int conteo = 0;
          
-         
-         public static int getConteo()
+    /**
+     *
+     * @return
+     */
+    public static int getConteo()
          {
              return conteo;
          }
          
-         public static void setConteo(int a)
+    /**
+     *
+     * @param a
+     */
+    public static void setConteo(int a)
          {
              conteo = a;
          }
@@ -51,8 +62,13 @@ public class boss3 extends Base {
              return llego;
          }
          
-         
-	public boss3(int posX,int posY,int flechitas){
+    /**
+     *
+     * @param posX
+     * @param posY
+     * @param flechitas
+     */
+    public boss3(int posX,int posY,int flechitas){
 		
                 super(posX,posY,flechitas);	
                 
