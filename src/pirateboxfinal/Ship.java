@@ -12,16 +12,14 @@ package pirateboxfinal;
 import java.awt.Image;
 import java.awt.Toolkit;
 
-public class Ship extends Base {
-
     /**
-     * Metodo constructor que hereda los atributos de la clase
-     * <code>Base</code>.
-     *
+     * Metodo constructor que hereda los atributos de la clase <code>Base</code>.
      * @param posX es la <code>posiscion en x</code> del objeto ship.
      * @param posY es el <code>posiscion en y</code> del objeto ship.
      * @param image es la <code>imagen</code> del objeto ship.
      */
+public class Ship extends Base {
+
     private boolean llega;
 
     public void setllega(boolean a) {

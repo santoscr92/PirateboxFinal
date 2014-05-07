@@ -1,7 +1,7 @@
 package pirateboxfinal;
 
 /**
- * Clase Raton
+ * Clase Bala
  *
  * @author Antonio Mejorado
  * @version 1.00 2008/6/13
@@ -9,16 +9,15 @@ package pirateboxfinal;
 import java.awt.Image;
 import java.awt.Toolkit;
 
-public class Bala extends Base {
-
-	/**
+         /**
 	 * Metodo constructor que hereda los atributos de la clase <code>Base</code>.
-	 * @param posX es la <code>posiscion en x</code> del objeto raton.
-	 * @param posY es el <code>posiscion en y</code> del objeto raton.
-	 * @param image es la <code>imagen</code> del objeto raton.
-         * @param flechitas es la <code>image</code> del objeto raton.
-	 */
-    
+	 * @param posX es la <code>posiscion en x</code> del objeto bala.
+	 * @param posY es el <code>posiscion en y</code> del objeto bala.
+	 * @param image es la <code>imagen</code> del objeto bala.
+         * @param flechitas es la <code>image</code> del objeto bala.
+	 */ 
+public class Bala extends Base {
+	
          private static int conteo = 0;
          private int direccion = 2;
          private int velocidad = 15;

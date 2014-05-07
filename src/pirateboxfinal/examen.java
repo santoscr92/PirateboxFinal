@@ -145,13 +145,19 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
     private JFrameScore jframeScore;    //Frame para desplegar el puntaje.
     private JList listaScore;    //Lista para desplegar el puntaje.
 
+    /**
+     * Metodo contructor
+     */
     public examen() {
         init();
         start();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     }
-
+    
+    /**
+     * Metodo init donde se inicializan variables
+     */
     public void init() {
         tbr = false;
         inicializaciontbr = false;
@@ -354,27 +360,40 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
         }
 
     }
-
+    /**
+     * Metodo start que genera un hilo
+     */
     public void start() {
         // Declaras un hilo
         Thread th = new Thread(this);
         // Empieza el hilo
         th.start();
     }
-
+    /**
+     * Metodo que crea un TBR
+     */
     public void TBR() {
         tonybr = new TBR(600, 30, 1);
     }
-
+    
+    /**
+     * Metodo que crea un malo2
+     */
     public void Malo2() {
         malo = new Malo2(600, 30, 1);
 
     }
-
+    
+    /**
+     * Metodo que crea un malo3
+     */
     public void Malo3() {
         Boss = new boss3(600, 30, 1);
     }
     
+    /**
+     * Metodo restart que sirve para reiniciar el juego
+     */
     public void Restart(){
            cancionF.stop();
            tonybr=null;
@@ -385,7 +404,10 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
            init();
           
         }
-
+    
+    /**
+     * Metodo run
+     */
     public void run() {
         //while (vida > 0) {
         while (true) {
@@ -404,7 +426,10 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
 
         }
     }
-
+    
+    /**
+     * Metodo actualiza en el cual se van modificando los valores de las variables
+     */
     public void actualiza() {
         if (vida == 1) {
             Muerto();
@@ -937,7 +962,10 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
 
         }
     }
-
+    
+    /**
+     * Metodo checaColision con el cual se manejan las colisiones entre objetos
+     */
     public void checaColision() {
 
         //jack no sale del frame
@@ -1189,7 +1217,6 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
                 if (bala.intersecta(tonybr)) {
 
                     score += 5;
-                    //Los asteroides aparecen en un rando random
                     vidatbr--;
                     bala = null;
                     balaviva = false;
@@ -1319,7 +1346,10 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
          }
          }*/
     }
-
+    
+    /**
+     * Metodo muerto que sirve para crear el jframe de los scores
+     */
     public void Muerto() {
         creaJFrame();
 
@@ -1343,7 +1373,10 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
             System.out.println("Error en " + e.toString());
         }
     }
-
+    
+    /**
+     * Metodo paint
+     */
     public void paint(Graphics g) {
         // Inicializan el DoubleBuffer
         if (dbImage == null) {
@@ -1362,7 +1395,10 @@ public class examen extends JFrame implements Runnable, KeyListener, MouseListen
         // Dibuja la imagen actualizada
         g.drawImage(dbImage, 0, 0, this);
     }
-
+    
+    /**
+     * Metodo paint1 en el cual se pinta todo lo del juego
+     */
     public void paint1(Graphics g) {
         if (vida > 0) {
             if (!start) {

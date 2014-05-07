@@ -1,9 +1,8 @@
 package pirateboxfinal;
 
 /**
- * Clase Animal 
+ * Clase Base
  *
- * @author Antonio Mejorado
  * @version 1.00 2008/6/13
  */
 import javax.swing.ImageIcon;

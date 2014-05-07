@@ -1,23 +1,23 @@
 package pirateboxfinal;
 
 /**
- * Clase Raton
+ * Clase Ammo
  *
- * @author Antonio Mejorado
+ * 
  * @version 1.00 2008/6/13
  */
 import java.awt.Image;
 import java.awt.Toolkit;
 
+         /**
+	 * Metodo constructor que hereda los atributos de la clase <code>Base</code>.
+	 * @param posX es la <code>posiscion en x</code> del objeto ammo.
+	 * @param posY es el <code>posiscion en y</code> del objeto ammo.
+	 * @param image es la <code>imagen</code> del objeto ammo.
+         * @param flechitas es la <code>image</code> del objeto ammo.
+	 */
 public class Ammo extends Base {
 
-	/**
-	 * Metodo constructor que hereda los atributos de la clase <code>Base</code>.
-	 * @param posX es la <code>posiscion en x</code> del objeto raton.
-	 * @param posY es el <code>posiscion en y</code> del objeto raton.
-	 * @param image es la <code>imagen</code> del objeto raton.
-         * @param flechitas es la <code>image</code> del objeto raton.
-	 */
     
          private static int conteo = 0;
          
