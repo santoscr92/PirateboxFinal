@@ -45,7 +45,12 @@ public class Animacion{
 	}
 	
 	// Inicializa la animación desde el principio. 
-	public synchronized void iniciar(){
+
+    /**
+     * Inicializa las variables en cero de tiempoDeAnimacion en 0 y el
+     * indiceCuadoActual en 0
+     */
+    	public synchronized void iniciar(){
 		tiempoDeAnimacion = 0;
 		indiceCuadroActual = 0;
 	}
@@ -86,7 +91,10 @@ public class Animacion{
 		return (cuadroDeAnimacion)cuadros.get(i);
 	}
 	
-	public class cuadroDeAnimacion{
+    /**
+     *La clase cuardoDeAnimacion obtiene las imagenes y realiza las animaciones
+     */
+    public class cuadroDeAnimacion{
 		
 		Image imagen;
 		long tiempoFinal;

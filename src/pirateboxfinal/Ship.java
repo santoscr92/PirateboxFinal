@@ -22,6 +22,7 @@ public class Ship extends Base {
 
     private boolean llega;
 
+    /*
     public void setllega(boolean a) {
         llega = a;
     }
@@ -29,7 +30,14 @@ public class Ship extends Base {
     public boolean getllega() {
         return llega;
     }
-
+    */
+    /**
+     * Indica al ship los variables que se van a usar para crear los objetos
+     * Metodo Malo donde se le asignan valores a los objetos de flechitas y posx y posy
+     * @param posX
+     * @param posY
+     * @param casu
+     */
     public Ship(int posX, int posY, int casu) {
         super(posX, posY, casu);
         Image ship1;

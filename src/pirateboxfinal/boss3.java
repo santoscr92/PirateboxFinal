@@ -3,8 +3,8 @@ package pirateboxfinal;
 /**
  * Clase BOSS3
  *
- * @author Antonio Mejorado
- * @version 1.00 2008/6/13
+ * @author Codet
+ * @version 1.00 2014/5/7
  */
 import java.awt.Image;
 import java.awt.Toolkit;
@@ -34,9 +34,19 @@ public class boss3 extends Base {
          
          private boolean llego;
          
+         /**
+     * Metodo que recibe como parametro a que se le asigna a la variable llego
+     * , el cual indica si un malo llego a tierra
+     * @param a
+     */
          public void setllego(boolean a){
              llego=a;
          }
+         
+         /**
+     *Metodo regresa el valor de la variable llego
+     * @return llego
+     */
          public boolean getllego(){
              return llego;
          }

@@ -42,6 +42,10 @@ import java.util.LinkedList;
 import java.awt.Toolkit;
 import java.awt.Rectangle;
 
+/**
+ *
+ * @author Codet
+ */
 public class examen extends JFrame implements Runnable, KeyListener, MouseListener, MouseMotionListener {
 
     private static final long serialVersionUID = 1L;

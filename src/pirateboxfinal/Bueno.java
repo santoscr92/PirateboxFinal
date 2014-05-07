@@ -22,8 +22,13 @@ public class Bueno extends Base{
         private static final String desaparece = "DESAPARECE";
         private static final String pausado = "PAUSADO";  
         
-    
-	public Bueno(int posX,int posY,int caso){
+    /**
+     * Metodo que crea a Bueno donde indica que variables se le asignaran 
+     * @param posX
+     * @param posY
+     * @param caso
+     */
+    public Bueno(int posX,int posY,int caso){
 		super(posX,posY,caso);	
                 //
                 

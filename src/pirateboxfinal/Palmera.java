@@ -31,7 +31,12 @@ public class Palmera extends Base {
              conteo = a;
          }
          
-         
+         /**
+     * Metodo Palmera donde se le asignan valores a los objetos de flechitas y posx y posy
+     * @param posX
+     * @param posY
+     * @param flechitas
+     */
 	public Palmera(int posX,int posY,int flechitas){
 		
                 super(posX,posY,flechitas);	

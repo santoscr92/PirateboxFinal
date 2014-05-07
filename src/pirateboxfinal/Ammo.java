@@ -21,19 +21,32 @@ public class Ammo extends Base {
     
          private static int conteo = 0;
          
-         
-         public static int getConteo()
+    /**
+	 * Metodo getConteo 
+	 * @return  return the variable conteo 
+	 */
+    public static int getConteo()
          {
              return conteo;
          }
          
+    
+         /**
+	 * Metodo setConteo
+	 * @param a set the variable conteo with the parameter recieved
+	 */
          public static void setConteo(int a)
          {
              conteo = a;
          }
          
-         
-	public Ammo(int posX,int posY,int flechitas){
+    /**
+     *
+     * @param posX recieves the x position of jack
+     * @param posY recieves the y position of jack
+     * @param flechitas recieves the direction of jack
+     */
+    public Ammo(int posX,int posY,int flechitas){
 		
                 super(posX,posY,flechitas);	
                 

@@ -50,9 +50,19 @@ public class TBR extends Base {
          
          private boolean llego;
          
+         /**
+     * Metodo que recibe como parametro a que se le asigna a la variable llego
+     * , el cual indica si un malo llego a tierra
+     * @param a
+     */
          public void setllego(boolean a){
              llego=a;
          }
+         
+         /**
+     *Metodo regresa el valor de la variable llego
+     * @return llego
+     */
          public boolean getllego(){
              return llego;
          }

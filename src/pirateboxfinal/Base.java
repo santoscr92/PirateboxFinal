@@ -153,6 +153,13 @@ public class Base {
             anim.actualiza(tiempo);
         }
         
+    /**
+     * Metodo recibe como parametro un objeto donde el metodo regresa una 
+     * booleana indicando si el objeto contiene valores identicos con el objeto
+     * al que se le compara
+     * @param obj
+     * @return
+     */
     public boolean tiene (Base obj){
             return getPerimetro().contains(posX, posY);
         }

@@ -22,19 +22,35 @@ public class Bala extends Base {
          private int direccion = 2;
          private int velocidad = 15;
          
-         public void setDireccion(int dir){
+    /**
+     *
+     * @param dir recibe la direccion para dirijir la bala
+     */
+    public void setDireccion(int dir){
              direccion = dir;
          }
          
-         public int getDireccion(){
+    /**
+     *
+     * @return direccion regresa el valor de la variable direccion
+     */
+    public int getDireccion(){
              return direccion;
          }
          
-         public void setVelocidad(int vel){
+    /**
+     *
+     * @param vel recibe la velocidad que va a tener la bala
+     */
+    public void setVelocidad(int vel){
              velocidad = vel;
          }
          
-         public int getVelocidad(){
+    /**
+     * Este metodo sirve para regresar el valor de la variable velocidad
+     * @return velocidad
+     */
+    public int getVelocidad(){
              return velocidad;  
          }
          
@@ -48,7 +64,15 @@ public class Bala extends Base {
              conteo = a;
          }
          
-	public Bala(int posX,int posY,int flechitas){
+    /**
+     * Metodo de creacion de la bala donde se asigna la direccion que debe de 
+     * tener la bala y en que posicion, tambien se le asigna la imagen a usar 
+     * para el objeto
+     * @param posX
+     * @param posY
+     * @param flechitas
+     */
+    public Bala(int posX,int posY,int flechitas){
 		
                 super(posX,posY,flechitas);	
                 

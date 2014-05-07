@@ -32,15 +32,30 @@ public class Malo extends Base {
          
          private boolean llego;
          
-         public void setllego(boolean a){
+    /**
+     * Metodo que recibe como parametro a que se le asigna a la variable llego
+     * , el cual indica si un malo llego a tierra
+     * @param a
+     */
+    public void setllego(boolean a){
              llego=a;
          }
-         public boolean getllego(){
+
+    /**
+     *Metodo regresa el valor de la variable llego
+     * @return llego
+     */
+    public boolean getllego(){
              return llego;
          }
          
-         
-	public Malo(int posX,int posY,int flechitas){
+    /**
+     * Metodo Malo donde se le asignan valores a los objetos de flechitas y posx y posy
+     * @param posX
+     * @param posY
+     * @param flechitas
+     */
+    public Malo(int posX,int posY,int flechitas){
 		
                 super(posX,posY,flechitas);	
                 
